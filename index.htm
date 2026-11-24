@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feane</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="bg-[url('../img/hero-bg.jpg')] bg-cover bg-center bg-no-repeat min-h-screen flex flex-col">
+        <nav class="relative text-white px-6 md:px-16 lg:px-24 pt-5">
+            <div class="flex items-center justify-between">
+                <a class="font-['Dancing_Script'] text-3xl font-bold" href="">Feane</a>
+                <menu class="hidden md:flex items-center gap-6 lg:gap-10 uppercase text-sm lg:text-base">
+                    <li><a href="" class="hover:text-amber-300">Home</a></li>
+                    <li><a href="" class="hover:text-amber-300">Menu</a></li>
+                    <li><a href="" class="hover:text-amber-300">About</a></li>
+                    <li><a href="" class="hover:text-amber-300">Book table</a></li>
+                </menu>
+                <div class="hidden md:flex items-center gap-4">
+                    <i class="fa-regular fa-user"></i>
+                    <i class="fa-regular fa-credit-card"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="" class="bg-amber-300 px-5 lg:px-7 py-2 rounded-3xl text-sm lg:text-base">Order Online</a>
+                </div>
+                <button id="menuBtn" class="md:hidden text-2xl" aria-label="Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <div id="mobileMenu"
+                class="hidden md:hidden absolute left-0 right-0 top-full mt-3 z-20 bg-black/85 backdrop-blur">
+                <div class="flex flex-col gap-5 p-6 uppercase">
+                    <a href="" class="hover:text-amber-300">Home</a>
+                    <a href="" class="hover:text-amber-300">Menu</a>
+                    <a href="" class="hover:text-amber-300">About</a>
+                    <a href="" class="hover:text-amber-300">Book table</a>
+                    <div class="flex items-center gap-5 pt-2 border-t border-white/20">
+                        <i class="fa-regular fa-user"></i>
+                        <i class="fa-regular fa-credit-card"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <a href="" class="bg-amber-300 text-center px-7 py-3 rounded-3xl">Order Online</a>
+                </div>
+            </div>
+        </nav>
+        <section class="relative w-full flex-1 overflow-hidden flex items-center py-10">
+            <div class="w-full px-6 md:px-16 lg:px-24 relative z-10">
+                <div class="slide transition-all duration-700">
+                    <div class="max-w-212.5">
+                        <h1 class="text-white text-4xl sm:text-5xl md:text-7xl mb-6 md:mb-8 font-['Dancing_Script']">
+                            Fast Food Restaurant
+                        </h1>
+                        <p class="text-white text-base md:text-xl leading-7 md:leading-8 max-w-200mb-8 md:mb-10">
+                            Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum
+                            quam quisquam esse error unde.
+                        </p>
+                        <button
+                            class="bg-[#f3c34f] hover:bg-[#e5ae30] text-white text-lg md:text-xl px-8 md:px-16 py-3 md:py-4 rounded-full transition duration-300 hover:scale-105">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+                <div class="slide hidden transition-all duration-700">
+                    <div class="max-w-212.5">
+                        <h1 class="text-white text-4xl sm:text-5xl md:text-7xl mb-6 md:mb-8 font-['Dancing_Script']">
+                            Delicious Burgers
+                        </h1>
+                        <p class="text-white text-base md:text-xl leading-7 md:leading-8 max-w-200 mb-8 md:mb-10">
+                            Fresh ingredients, juicy meat and unforgettable taste. Discover our special burgers prepared
+                            with love and served fresh every day.
+                        </p>
+                        <button
+                            class="bg-[#f3c34f] hover:bg-[#e5ae30] text-white text-lg md:text-xl px-8 md:px-16 py-3 md:py-4 rounded-full transition duration-300 hover:scale-105">
+                            Explore Menu
+                        </button>
+                    </div>
+                </div>
+                <div class="slide hidden transition-all duration-700">
+                    <div class="max-w-212.5">
+                        <h1 class="text-white text-4xl sm:text-5xl md:text-7xl mb-6 md:mb-8 font-['Dancing_Script']">
+                            Taste The Difference
+                        </h1>
+                        <p class="text-white text-base md:text-xl leading-7 md:leading-8 max-w-200 mb-8 md:mb-10">
+                            Enjoy crispy fries, delicious meals and amazing flavors. Your favorite food is just one
+                            click away.
+                        </p>
+                        <button
+                            class="bg-[#f3c34f] hover:bg-[#e5ae30] text-white text-lg md:text-xl px-8 md:px-16 py-3 md:py-4 rounded-full transition duration-300 hover:scale-105">
+                            Discover More
+                        </button>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 mt-12 md:mt-24">
+                    <button class="dot w-4 h-4 rounded-full bg-white transition-all" onclick="showSlide(0)"
+                        aria-label="Slide 1"></button>
+                    <button class="dot w-4 h-4 rounded-full bg-white transition-all" onclick="showSlide(1)"
+                        aria-label="Slide 2"></button>
+                    <button class="dot w-4 h-4 rounded-full bg-white transition-all" onclick="showSlide(2)"
+                        aria-label="Slide 3"></button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+    <div class="max-w-300 mx-auto px-6 py-16 flex flex-col lg:flex-row gap-8">
+        <div class="bg-[#252a33] rounded-lg p-8 flex flex-col sm:flex-row items-center gap-8 sm:gap-10 flex-1">
+            <img src="img/o1.jpg" alt=""
+                class="w-56 h-56 md:w-44 md:h-44 shrink-0 rounded-full object-cover border-4 border-[#f3c34f]">
+            <div class="text-center sm:text-left">
+                <h3 class="font-['Dancing_Script'] text-xl md:text-2xl text-white">Tasty Thursdays</h3>
+                <p class="font-['Dancing_Script'] text-2xl md:text-5xl text-white my-4">
+                    20%<span class="text-2xl md:text-3xl ml-1">Off</span>
+                </p>
+                <a href=""
+                    class="inline-flex items-center gap-4 bg-[#f3c34f] hover:bg-[#e5ae30] text-white text-xl px-10 py-3 md:py-4 rounded-full transition">
+                    Order Now <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
+        </div>
+        <div class="bg-[#252a33] rounded-lg p-8 flex flex-col sm:flex-row items-center gap-8 sm:gap-10 flex-1">
+            <img src="img/o2.jpg" alt=""
+                class="w-56 h-56 md:w-44 md:h-44 shrink-0 rounded-full object-cover border-4 border-[#f3c34f]">
+            <div class="text-center sm:text-left">
+                <h3 class="font-['Dancing_Script'] text-xl md:text-2xl text-white">Pizza Days</h3>
+                <p class="font-['Dancing_Script'] text-2xl md:text-5xl text-white my-4">
+                    15%<span class="text-2xl md:text-3xl ml-1">Off</span>
+                </p>
+                <a href=""
+                    class="inline-flex items-center  gap-4 bg-[#f3c34f] hover:bg-[#e5ae30] text-white text-xl md:text-2xl px-10 py-3 md:py-4 rounded-full transition">
+                    Order Now <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container1">
+        <h1 class="text-center font-['Dancing_Script'] text-3xl">Our Menu</h1>
+        <menu class="flex flex-wrap justify-center gap-x-6 gap-y-3 sm:gap-x-10 p-4 sm:p-6">
+            <li><a href="" class="text-xl bg-black text-white px-6 py-2 rounded-3xl">All</a></li>
+            <li><a href="" class="text-xl">Burger </a></li>
+            <li><a href="" class="text-xl">Pizza</a></li>
+            <li><a href="" class="text-xl">Pasta</a></li>
+            <li><a href="" class="text-xl">Fries</a></li>
+        </menu>
+    </div>
+    <div class="max-w-300 mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card bg-[#252a33] rounded-3xl overflow-hidden text-white flex flex-col">
+            <div class="bg-[#f1f2f4] h-56 flex items-center justify-center rounded-bl-[60px]">
+                <img src="img/f1.png" alt="Delicious Pizza" class="h-44 w-auto object-contain">
+            </div>
+            <div class="text px-6 pt-8">
+                <h5 class="font-semibold text-2xl">Delicious Pizza</h5>
+                <p class="pt-3 text-lg leading-relaxed">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                    velit, magnam voluptatem repellendus sed eaque</p>
+            </div>
+            <div class="qiymet flex justify-between items-center px-6 pt-8 pb-6 mt-auto">
+                <p class="text-xl">$20</p>
+                <i class="fa-solid fa-cart-shopping  bg-amber-300  py-3 px-5 rounded-3xl"></i>
+            </div>
+        </div>
+        <div class="card bg-[#252a33] rounded-3xl overflow-hidden text-white flex flex-col">
+            <div class="bg-[#f1f2f4] h-56 flex items-center justify-center rounded-bl-[60px]">
+                <img src="img/f2.png" alt="Delicious Burger" class="h-44 w-auto object-contain">
+            </div>
+            <div class="text px-6 pt-8">
+                <h5 class="font-semibold text-2xl">Delicious Burger</h5>
+                <p class="pt-3 text-lg leading-relaxed">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                    velit, magnam voluptatem repellendus sed eaque</p>
+            </div>
+            <div class="qiymet flex justify-between items-center px-6 pt-8 pb-6 mt-auto">
+                <p class="text-xl">$15</p>
+                <i class="fa-solid fa-cart-shopping  bg-amber-300  py-3 px-5 rounded-3xl"></i>
+            </div>
+        </div>
+        <div class="card bg-[#252a33] rounded-3xl overflow-hidden text-white flex flex-col">
+            <div class="bg-[#f1f2f4] h-56 flex items-center justify-center rounded-bl-[60px]">
+                <img src="img/f3.png" alt="Delicious Pizza" class="h-44 w-auto object-contain">
+            </div>
+            <div class="text px-6 pt-8">
+                <h5 class="font-semibold text-2xl">Delicious Pizza</h5>
+                <p class="pt-3 text-lg leading-relaxed">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                    velit, magnam voluptatem repellendus sed eaque</p>
+            </div>
+            <div class="qiymet flex justify-between items-center px-6 pt-8 pb-6 mt-auto">
+                <p class="text-xl">$17</p>
+                <i class="fa-solid fa-cart-shopping  bg-amber-300  py-3 px-5 rounded-3xl"></i>            
+            </div>
+        </div>
+        <div class="card bg-[#252a33] rounded-3xl overflow-hidden text-white flex flex-col">
+            <div class="bg-[#f1f2f4] h-56 flex items-center justify-center rounded-bl-[60px]">
+                <img src="img/f4.png" alt="Delicious Pizza" class="h-44 w-auto object-contain">
+            </div>
+            <div class="text px-6 pt-8">
+                <h5 class="font-semibold text-2xl">Delicious Pasta</h5>
+                <p class="pt-3 text-lg leading-relaxed">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                    velit, magnam voluptatem repellendus sed eaque</p>
+            </div>
+            <div class="qiymet flex justify-between items-center px-6 pt-8 pb-6 mt-auto">
+                <p class="text-xl">$18</p>
+                <i class="fa-solid fa-cart-shopping  bg-amber-300  py-3 px-5 rounded-3xl"></i>            
+            </div>
+        </div>
+        <div class="card bg-[#252a33] rounded-3xl overflow-hidden text-white flex flex-col">
+            <div class="bg-[#f1f2f4] h-56 flex items-center justify-center rounded-bl-[60px]">
+                <img src="img/f5.png" alt="Delicious Pizza" class="h-44 w-auto object-contain">
+            </div>
+            <div class="text px-6 pt-8">
+                <h5 class="font-semibold text-2xl">French Fries</h5>
+                <p class="pt-3 text-lg leading-relaxed">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                    velit, magnam voluptatem repellendus sed eaque</p>
+            </div>
+            <div class="qiymet flex justify-between items-center px-6 pt-8 pb-6 mt-auto">
+                <p class="text-xl">$10</p>
+                <i class="fa-solid fa-cart-shopping  bg-amber-300  py-3 px-5 rounded-3xl"></i>            
+            </div>
+        </div>
+        <div class="card bg-[#252a33] rounded-3xl overflow-hidden text-white flex flex-col">
+            <div class="bg-[#f1f2f4] h-56 flex items-center justify-center rounded-bl-[60px]">
+                <img src="img/f6.png" alt="Delicious Pizza" class="h-44 w-auto object-contain">
+            </div>
+            <div class="text px-6 pt-8">
+                <h5 class="font-semibold text-2xl">Delicious Pizza</h5>
+                <p class="pt-3 text-lg leading-relaxed">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                    velit, magnam voluptatem repellendus sed eaque</p>
+            </div>
+            <div class="qiymet flex justify-between items-center px-6 pt-8 pb-6 mt-auto">
+                <p class="text-xl">$17</p>
+                <i class="fa-solid fa-cart-shopping  bg-amber-300  py-3 px-5 rounded-3xl"></i>            
+            </div>
+        </div>
+        <div class="card bg-[#252a33] rounded-3xl overflow-hidden text-white flex flex-col">
+            <div class="bg-[#f1f2f4] h-56 flex items-center justify-center rounded-bl-[60px]">
+                <img src="img/f7.png" alt="Delicious Pizza" class="h-44 w-auto object-contain">
+            </div>
+            <div class="text px-6 pt-8">
+                <h5 class="font-semibold text-2xl">Tasty Burger</h5>
+                <p class="pt-3 text-lg leading-relaxed">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                    velit, magnam voluptatem repellendus sed eaque</p>
+            </div>
+            <div class="qiymet flex justify-between items-center px-6 pt-8 pb-6 mt-auto">
+                <p class="text-xl">$12</p>
+                <i class="fa-solid fa-cart-shopping  bg-amber-300  py-3 px-5 rounded-3xl"></i>            
+            </div>
+        </div>
+        <div class="card bg-[#252a33] rounded-3xl overflow-hidden text-white flex flex-col">
+            <div class="bg-[#f1f2f4] h-56 flex items-center justify-center rounded-bl-[60px]">
+                <img src="img/f8.png" alt="Delicious Pizza" class="h-44 w-auto object-contain">
+            </div>
+            <div class="text px-6 pt-8">
+                <h5 class="font-semibold text-2xl">Tasty Burger</h5>
+                <p class="pt-3 text-lg leading-relaxed">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                    velit, magnam voluptatem repellendus sed eaque</p>
+            </div>
+            <div class="qiymet flex justify-between items-center px-6 pt-8 pb-6 mt-auto">
+                <p class="text-xl">$14</p>
+                <i class="fa-solid fa-cart-shopping  bg-amber-300  py-3 px-5 rounded-3xl"></i>            
+            </div>
+        </div>
+        <div class="card bg-[#252a33] rounded-3xl overflow-hidden text-white flex flex-col">
+            <div class="bg-[#f1f2f4] h-56 flex items-center justify-center rounded-bl-[60px]">
+                <img src="img/f9.png" alt="Delicious Pizza" class="h-44 w-auto object-contain">
+            </div>
+            <div class="text px-6 pt-8">
+                <h5 class="font-semibold text-2xl">Delicious Pasta</h5>
+                <p class="pt-3 text-lg leading-relaxed">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                    velit, magnam voluptatem repellendus sed eaque</p>
+            </div>
+            <div class="qiymet flex justify-between items-center px-6 pt-8 pb-6 mt-auto">
+                <p class="text-xl">$10</p>
+                <i class="fa-solid fa-cart-shopping  bg-amber-300  py-3 px-5 rounded-3xl"></i>            
+            </div>
+        </div>
+    </div>
+    <section class="bg-gray-800 m-auto flex flex-col md:flex-row items-center w-full">
+        <div class="sol w-full md:w-1/2 py-10 px-6 md:pl-30 md:pr-0 flex justify-center md:justify-start">
+            <img src="img/about-img.png" class="w-125 max-w-sm md:max-w-none h-auto md:h-150" alt="About Feane">
+        </div>
+        <div class="sag w-full md:w-1/2 text-white px-6 pb-10 md:p-0 text-center md:text-left">
+            <h1 class="font-['Dancing_Script'] text-3xl md:text-5xl">We Are Feane</h1>
+            <p class="py-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                alteration in some form,
+                by injected humour, or randomised words which don't look even slightly believable. If you are going to use a
+                passage of
+                Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All</p>
+            <a href="" class="inline-block bg-amber-300 px-10 py-3 rounded-3xl">Read More</a>
+        </div>
+    </section>
+    <section class="max-w-300 mx-auto px-6 py-16">
+        <h2 class="font-['Dancing_Script'] text-4xl md:text-5xl mb-10">Book A Table</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8"><form action="" class="flex flex-col gap-6">
+                <input type="text" placeholder="Your Name"
+                    class="w-full bg-white border border-gray-400 rounded-md px-12 py-4 text-lg outline-none placeholder:text-gray-700 focus:border-[#f3c34f] transition">
+                <input type="tel" placeholder="Phone Number"
+                    class="w-full bg-white border border-gray-400 rounded-md px-12 py-4 text-lg outline-none placeholder:text-gray-700 focus:border-[#f3c34f] transition">
+                <input type="email" placeholder="Your Email"
+                    class="w-full bg-white border border-gray-400 rounded-md px-12 py-4 text-lg outline-none placeholder:text-gray-700 focus:border-[#f3c34f] transition">
+                <div class="relative">
+                    <select name="persons"
+                        class="w-full appearance-none bg-white border border-gray-400 rounded-md pl-12 pr-14 py-4 text-lg outline-none cursor-pointer focus:border-[#f3c34f] transition">
+                        <option value="" disabled selected>How many persons?</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6+</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down absolute right-5 top-1/2 -translate-y-1/2 text-gray-400 text-sm pointer-events-none"></i>
+                </div>
+                <input type="date"
+                    class="w-full bg-white border border-gray-400 rounded-md px-12 py-4 text-lg outline-none focus:border-[#f3c34f] transition">
+                <button type="submit"
+                    class="self-start bg-[#f3c34f] hover:bg-[#e5ae30] text-white text-lg px-12 py-3 rounded-full transition">
+                    Book Now
+                </button>
+            </form>
+            <div class="rounded-2xl overflow-hidden min-h-87.5">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.3340872612125!2d49.847094999999996!3d40.3792876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307da7a3ff6abf%3A0xbd41223601005f08!2s4%2C%2015%20a%20Azadliq%20Ave%2C%20Baku%201014!5e0!3m2!1sen!2saz!4v1795463506550!5m2!1sen!2saz"
+                    class="w-full h-full min-h-87.5]" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+    </section>
+    <section class="max-w-300 mx-auto px-6 py-16">
+        <h2 class="text-center font-['Dancing_Script'] text-4xl md:text-5xl mb-12">What Says Our Customers</h2>
+        <div class="overflow-hidden">
+            <div id="reviewTrack" class="flex -mx-3 transition-transform duration-500 ease-in-out">
+                <div class="w-full md:w-1/2 shrink-0 px-3">
+                    <div class="bg-[#252a33] text-white rounded-lg p-8">
+                        <p class="leading-7">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam
+                        </p>
+                        <h5 class="text-xl font-semibold mt-6">Moana Michell</h5>
+                        <p>magna aliqua</p>
+                    </div>
+                    <div class="relative w-28 h-28 mt-6">
+                        <div
+                            class="absolute -top-3 left-1/2 -translate-x-1/2 w-6 h-4 bg-[#f3c34f] [clip-path:polygon(50%_0,0_100%,100%_100%)]">
+                        </div>
+                        <img src="img/client1.jpg" alt="Moana Michell"
+                            class="w-full h-full rounded-full object-cover border-4 border-[#f3c34f]">
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 shrink-0 px-3">
+                    <div class="bg-[#252a33] text-white rounded-lg p-8">
+                        <p class="leading-7">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam
+                        </p>
+                        <h5 class="text-xl font-semibold mt-6">Mike Hamell</h5>
+                        <p>magna aliqua</p>
+                    </div>
+                    <div class="relative w-28 h-28 mt-6">
+                        <div
+                            class="absolute -top-3 left-1/2 -translate-x-1/2 w-6 h-4 bg-[#f3c34f] [clip-path:polygon(50%_0,0_100%,100%_100%)]">
+                        </div>
+                        <img src="img/client2.jpg" alt="Mike Hamell"
+                            class="w-full h-full rounded-full object-cover border-4 border-[#f3c34f]">
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 shrink-0 px-3">
+                    <div class="bg-[#252a33] text-white rounded-lg p-8">
+                        <p class="leading-7">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam
+                        </p>
+                        <h5 class="text-xl font-semibold mt-6">Anna Smith</h5>
+                        <p>magna aliqua</p>
+                    </div>
+                    <div class="relative w-28 h-28 mt-6">
+                        <div
+                            class="absolute -top-3 left-1/2 -translate-x-1/2 w-6 h-4 bg-[#f3c34f] [clip-path:polygon(50%_0,0_100%,100%_100%)]">
+                        </div>
+                        <img src="img/client1.jpg" alt="Anna Smith"
+                            class="w-full h-full rounded-full object-cover border-4 border-[#f3c34f]">
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 shrink-0 px-3">
+                    <div class="bg-[#252a33] text-white rounded-lg p-8">
+                        <p class="leading-7">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam
+                        </p>
+                        <h5 class="text-xl font-semibold mt-6">John Doe</h5>
+                        <p>magna aliqua</p>
+                    </div>
+                    <div class="relative w-28 h-28 mt-6">
+                        <div
+                            class="absolute -top-3 left-1/2 -translate-x-1/2 w-6 h-4 bg-[#f3c34f] [clip-path:polygon(50%_0,0_100%,100%_100%)]">
+                        </div>
+                        <img src="img/client2.jpg" alt="John Doe"
+                            class="w-full h-full rounded-full object-cover w border-4 border-[#f3c34f]">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center gap-3 mt-10">
+            <button id="reviewPrev" aria-label="Previous"
+                class="w-14 h-14 rounded-full bg-[#f3c34f] hover:bg-[#e5ae30] text-white text-xl transition">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button id="reviewNext" aria-label="Next"
+                class="w-14 h-14 rounded-full bg-[#f3c34f] hover:bg-[#e5ae30] text-white text-xl transition">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+    </main>
+    <footer class="bg-[#252a33] text-white p-8">
+        <div class="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-10 text-white">
+            <section class="text-center">
+                <h1 class="font-['Dancing_Script'] text-3xl p-2">Contact Us</h1>
+                <p><i class="fa-solid fa-location-dot p-2"></i> Location</p>
+                <p><i class="fa-solid fa-phone p-2"></i> Call +01 1234567890</p>
+                <p><i class="fa-solid fa-envelope p-2"></i> demo@gmail.com</p>
+            </section>
+            <section class="text-center max-w-md">
+                <a href="" class="font-['Dancing_Script'] text-3xl p-2">Feane</a>
+                <p class="mt-4">Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200
+                    Latin words, combined with</p>
+            </section>
+            <section class="text-center">
+                <h1 class="font-['Dancing_Script'] text-3xl p-2">Opening Hours</h1>
+                <p>Everyday</p>
+                <p>10.00 Am -10.00 Pm</p>
+            </section>
+        </div>
+        <br>
+        <br>
+        <div class="text-center">
+            <p> &copy; 2026 All Rights Reserved By Free Html Templates</p>
+            <p> &copy Distributed By ThemeWagon</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobil menyu
+        const menuBtn = document.getElementById("menuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+        mobileMenu.querySelectorAll("a").forEach((a) =>
+            a.addEventListener("click", () => mobileMenu.classList.add("hidden"))
+        );
+
+        // Slider
+        let currentSlide = 0;
+        const slides = document.querySelectorAll(".slide");
+        const dots = document.querySelectorAll(".dot");
+
+        function showSlide(index) {
+            slides[currentSlide].classList.add("hidden");
+            dots[currentSlide].classList.remove("!bg-[#f3c34f]", "w-8");
+
+            currentSlide = index;
+
+            slides[currentSlide].classList.remove("hidden");
+            dots[currentSlide].classList.add("!bg-[#f3c34f]", "w-8");
+        }
+
+        dots[0].classList.add("!bg-[#f3c34f]", "w-8");
+
+        setInterval(() => {
+            showSlide((currentSlide + 1) % slides.length);
+        }, 5000);
+        // Müştəri rəyləri slideri
+            const reviewTrack = document.getElementById("reviewTrack");
+            const reviewSlides = reviewTrack.children;
+            let reviewIndex = 0;
+
+            function perView() {
+                return window.innerWidth >= 768 ? 2 : 1;
+            }
+
+            function updateReview() {
+                const maxIndex = reviewSlides.length - perView();
+                if (reviewIndex > maxIndex) reviewIndex = maxIndex;
+                if (reviewIndex < 0) reviewIndex = 0;
+                reviewTrack.style.transform = `translateX(-${reviewIndex * (100 / perView())}%)`;
+            }
+
+            document.getElementById("reviewNext").addEventListener("click", () => {
+                const maxIndex = reviewSlides.length - perView();
+                reviewIndex = reviewIndex >= maxIndex ? 0 : reviewIndex + 1;
+                updateReview();
+            });
+
+            document.getElementById("reviewPrev").addEventListener("click", () => {
+                const maxIndex = reviewSlides.length - perView();
+                reviewIndex = reviewIndex <= 0 ? maxIndex : reviewIndex - 1;
+                updateReview();
+            });
+
+            window.addEventListener("resize", updateReview);
+    </script>
+    
+</body>
+
+</html>
